@@ -4,7 +4,7 @@ version:
 Author: Jin
 Date: 2021-08-06 10:38:30
 LastEditors: Jin
-LastEditTime: 2021-08-06 11:05:38
+LastEditTime: 2021-08-06 11:10:05
 '''
 import datetime
 import socket, sys
@@ -20,7 +20,7 @@ username = 'preiot'
 password = 'EnVyCAGYIzK22lEUXGvmEQEe4bVJmtll'
 # 订阅主题名
 topic = 'topic'
- 
+
 #======================================================
 def on_connect(mqttc, obj, rc):
     print("OnConnetc, rc: "+str(rc))
@@ -42,7 +42,7 @@ def on_message(mqttc, obj, msg):
  
 def on_exec(strcmd):
     print("Exec:",strcmd)
- 
+
 #=====================================================
 if __name__ == '__main__':
     mqttc = mqtt.Client("test")
